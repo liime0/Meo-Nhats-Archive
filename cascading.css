@@ -1,0 +1,372 @@
+body {
+  background-color:#ffffff;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-weight: 150%;
+  font-size: 50px;
+
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+h1:hover{
+  transform: skewX(-20deg);
+}
+
+.home {
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-weight: 100%;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -1.75px;
+  transform:scaleY(2)
+}
+
+
+a{
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-weight: 90%;
+  font-size: 20px;
+  line-height: 5;
+  letter-spacing: -1.75px;
+  transform:scaleY(1.5)
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.page-switch:hover{
+  transform:scaleY(1.5)
+}
+
+.home-links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  align-items: flex-start;
+
+  z-index: 1000;
+}
+
+
+.intro {
+  position: absolute;
+  top: 1300px;
+  left: 1250px;
+
+  z-index: 3;
+}
+
+.bgface {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  z-index: 2;
+}
+
+.drag-part {
+  position: absolute;
+  display: block;
+  cursor: grab;
+  -webkit-user-drag: none;
+  user-select: none;
+  filter: drop-shadow(0px 8px 16px rgba(0,0,0,0.4));
+  transition: filter 0.2s;
+  z-index: 4;
+}
+
+.drag-part:active {
+  cursor: grabbing;
+  filter: drop-shadow(0px 12px 24px rgba(0,0,0,0.6));
+}
+
+#mouth-drag {
+  top: 1200px;
+  left: 300px;
+}
+
+#nose-drag {
+  top: 750px;
+  left: 150px;
+}
+
+#right-eye-drag {
+  top: 1100px;
+  left: 100px;
+}
+
+#left-eye-drag {
+  top: 1250px;
+  left: 50px;
+}
+
+.page-title{
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  line-height: 6;
+}
+
+.about{
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-weight: 70%;
+  font-size: 50px;
+  letter-spacing: -1.5px;
+  transform:scaleY(6.5)
+}
+
+.work-about{
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-weight: 90%;
+  font-size: 50px;
+  letter-spacing: -1px;
+  transform:scaleY(6)
+}
+
+.description{
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: 20px;
+  max-width: 500px;
+  line-height: 1;
+  letter-spacing: -1.75px; 
+  transform:scaleY(1.5)
+}
+
+.work-description{
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: 20px;
+  max-width: 500px;
+  line-height: 1;
+  letter-spacing: -2px; 
+  transform:scaleY(1)
+}
+
+.contact-links{
+  display: block;
+  position: relative;
+  z-index: 10;
+  
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: 20px;
+  max-width: 500px;
+  line-height: 2.5;
+  letter-spacing: -1.75px; 
+  transform:scaleY(1.5)
+}
+
+#description {
+  text-align: justify;
+  margin-left: 220px;
+}
+
+#mn1 {
+  position: fixed;
+
+  left: 800px;
+}
+
+#mn2 {
+  position: fixed;
+
+  left: 950px;
+}
+
+#mn3 {
+  position: fixed;
+
+  left: 1160px;
+}
+
+#mn4 {
+  position: fixed;
+
+  left: 1300px;
+}
+
+#mn5 {
+  position: fixed;
+
+  left: 1470px;
+}
+
+.meonhats {
+  position: fixed;
+  bottom: 0px;
+  padding: 10px 0;
+  z-index: 100;
+
+  transform-origin: bottom;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.meonhats:hover {
+  transform: scaleY(1.2);
+}
+
+.about-link{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  align-items: flex-start;
+
+  z-index: 1000;
+
+  text-align: right;
+
+  position: fixed;
+  top: 5px;
+  padding: 10px 0;
+  
+  left: 1800px;
+}
+
+.dmt{
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  top: 400px;
+  left: 100px;
+
+  line-height: 0;
+  gap: 60px;
+}
+
+.diamondtears{
+  display: flex;
+  position:absolute;
+  top:350px;
+  left:700px;
+  gap:120px;
+  flex-wrap: wrap;
+}
+
+.diamondtearspic{
+  transition: transform 0.4s ease;
+}
+
+.diamondtearspic:hover{
+  transform: scale(1.25);
+}
+
+.insta{
+  transition: transform 0.5s ease;
+}
+
+.insta:hover{
+  transform: scale(1.5);
+  filter: drop-shadow(0px 12px 24px rgba(0,0,0,0.6));
+  z-index: 10;
+}
+
+.kkb{
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  top: 1150px;
+  left: 100px;
+
+  line-height: 0;
+  gap: 60px;
+}
+
+.kokebun{
+  display: flex;
+  position:absolute;
+  top:1100px;
+  left:700px;
+  gap:120px;
+  flex-wrap: wrap;
+}
+
+.dnlc{
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  top: 1900px;
+  left: 100px;
+
+  line-height: 0;
+  gap: 60px;
+}
+
+.lacanh{
+  display: flex;
+  position:absolute;
+  top:1850px;
+  left:700px;
+  gap:120px;
+  flex-wrap: wrap;
+}
+
+.jis{
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  top: 2650px;
+  left: 100px;
+
+  line-height: 0;
+  gap: 60px;
+}
+
+.clb{
+  display: flex;
+  position:absolute;
+  top:2600px;
+  left:700px;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+.night{
+  position: fixed;
+  top: 16px;
+  left:50%;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border: none;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: 20px;
+  z-index: 999999;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.night:hover{
+  transform: scale(1.1);
+}
+
+html.inverted {
+  filter: invert(1) hue-rotate(180deg);
+  background-color: #ffffff; 
+}
+
+html.inverted .diamondtearspic,
+html.inverted .insta {
+filter: invert(1) hue-rotate(180deg);
+}
